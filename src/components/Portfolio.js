@@ -1,4 +1,3 @@
-// src/components/Portfolio.js
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Code, Shield, Cloud, Database, ChevronDown, Menu, X, ExternalLink } from 'lucide-react';
 
@@ -93,27 +92,44 @@ export default function Portfolio() {
       <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16">
         <div className="text-center max-w-4xl mx-auto">
           {/* Profile Photo - Replace this with your actual photo */}
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-6xl font-bold text-white shadow-2xl">
-            AM
-          </div>
-          {/* Uncomment and use this when you add your photo:
           <img 
-            src="/images/profile.jpg" 
+            src="images\profile.jpg" 
             alt="Ajithraj M" 
             className="w-48 h-48 mx-auto mb-8 rounded-full object-cover shadow-2xl border-4 border-cyan-400"
           />
-          */}
+         
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Ajithraj
+            Ajithraj M
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">
             Security Engineer & Full Stack Developer
           </h2>
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate engineer with 2+ years of experience in product security, Software development,
-            automation, and AI/ML integration. 
+          <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Passionate security engineer with 2+ years of experience in product security, 
+            automation, and AI/ML integration. Specializing in SAST, vulnerability assessment, 
+            and building secure, scalable solutions.
           </p>
+          
+          {/* Social Links */}
+          <div className="flex justify-center gap-6 mb-12">
+            <a
+              href="https://github.com/AJITHRAJ18/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors group"
+            >
+              <Github size={24} className="text-gray-400 group-hover:text-cyan-400 transition-colors" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ajith-raj-b37a92287/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors group"
+            >
+              <Linkedin size={24} className="text-gray-400 group-hover:text-cyan-400 transition-colors" />
+            </a>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
@@ -314,33 +330,105 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-        <section id="projects" className="py-20 px-4 bg-gray-800/50">
-            <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-16 text-cyan-400">Featured Project</h2>
-                <div className="max-w-4xl mx-auto">
-                <div className="bg-gray-800 rounded-lg p-8 border border-gray-700 shadow-xl hover:border-cyan-400 transition-colors">
-                    <div className="flex items-center mb-6">
-                    <Database className="text-cyan-400 mr-4" size={32} />
-                    <h3 className="text-2xl font-bold text-white">
-                        Natural Language to Database Query Converter
-                    </h3>
-                    </div>
-                    <p className="text-gray-300 leading-relaxed mb-6">
-                    Built an intelligent system that converts human language queries (e.g., "show me all employees in sales") 
-                    into SQL using LangChain. The system supports dynamic query generation and integrates with PostgreSQL, 
-                    allowing non-technical users to interact with databases using plain English. Input sanitization and query validation 
-                    are implemented to prevent SQL injection attacks.
-                    </p>
-                    <div className="flex flex-wrap gap-3">
-                    <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-sm">LangChain</span>
-                    <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-                    <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-sm">React</span>
-                    <span className="bg-cyan-500 text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                    </div>
-                </div>
-                </div>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-4 bg-gray-800/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 text-cyan-400">Featured Project</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-800 rounded-lg p-8 border border-gray-700 shadow-xl hover:border-cyan-400 transition-colors">
+              <div className="flex items-center mb-6">
+                <Database className="text-cyan-400 mr-4" size={32} />
+                <h3 className="text-2xl font-bold text-white">Natural Language to Database Query Converter</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Built an intelligent system that converts human language queries (e.g., "show me all employees in sales") 
+                into SQL using LangChain. The system understands natural language context and generates accurate database queries, 
+                making data access more intuitive for non-technical users.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">LangChain</span>
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">SQL</span>
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">NLP</span>
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">AI/ML</span>
+              </div>
             </div>
-        </section>
+          </div>
         </div>
-  )
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-cyan-400">Let's Connect</h2>
+          <p className="text-xl text-gray-300 mb-12">
+            I'm always interested in discussing security engineering, automation, and innovative technology solutions.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center mb-4">
+                <Mail className="text-cyan-400" size={24} />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-white">Email</h3>
+              <a href="mailto:ajithrajepm2218@gmail.com" className="text-gray-300 hover:text-cyan-400 transition-colors">
+                ajithrajepm2218@gmail.com
+              </a>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center mb-4">
+                <Phone className="text-cyan-400" size={24} />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-white">Phone</h3>
+              <a href="tel:+916382146594" className="text-gray-300 hover:text-cyan-400 transition-colors">
+                +91 6382146594
+              </a>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center mb-4">
+                <MapPin className="text-cyan-400" size={24} />
+              </div>
+              <h3 className="text-lg font-semibold mb-2 text-white">Location</h3>
+              <p className="text-gray-300">Chennai, Tamil Nadu</p>
+            </div>
+          </div>
+
+          <div className="flex justify-center gap-6">
+            <a
+              href="https://github.com/ajithraj-m"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors group"
+            >
+              <Github size={20} className="text-gray-400 group-hover:text-cyan-400 transition-colors" />
+              <span className="text-gray-300 group-hover:text-white transition-colors">GitHub</span>
+              <ExternalLink size={16} className="text-gray-500 group-hover:text-cyan-400 transition-colors" />
+            </a>
+            <a
+              href="https://linkedin.com/in/ajithraj-m"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors group"
+            >
+              <Linkedin size={20} className="text-gray-400 group-hover:text-cyan-400 transition-colors" />
+              <span className="text-gray-300 group-hover:text-white transition-colors">LinkedIn</span>
+              <ExternalLink size={16} className="text-gray-500 group-hover:text-cyan-400 transition-colors" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 py-8 px-4 border-t border-gray-700">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-gray-400">
+            © 2024 Ajithraj M. Built with React and Tailwind CSS.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
 }
