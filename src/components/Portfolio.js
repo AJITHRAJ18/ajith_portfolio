@@ -92,15 +92,20 @@ export default function Portfolio() {
       <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16">
         <div className="text-center max-w-4xl mx-auto">
           {/* Profile Photo - Replace this with your actual photo */}
-          <img 
-            src="images\profile.jpg" 
+          {/* <img 
+            src="https://drive.google.com/file/d/1pMBI7IQ1udGAEfcQptjXXqzEemqhwY9T/view?usp=sharing" 
             alt="Ajithraj M" 
             className="w-48 h-48 mx-auto mb-8 rounded-full object-cover shadow-2xl border-4 border-cyan-400"
+          /> */}
+          <img
+            src="https://drive.google.com/uc?export=view&id=1pMBI7IQ1udGAEfcQptjXXqzEemqhwY9T"
+            alt="Ajithraj M"
+            className="w-48 h-48 rounded-full border-4 border-cyan-400"
           />
          
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Ajithraj M
+            Ajithraj 
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">
             Security Engineer & Full Stack Developer
