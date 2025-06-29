@@ -91,13 +91,6 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Profile Photo - Replace this with your actual photo */}
-          {/* <img 
-            src="https://drive.google.com/file/d/1pMBI7IQ1udGAEfcQptjXXqzEemqhwY9T/view?usp=sharing" 
-            alt="Ajithraj M" 
-            className="w-48 h-48 mx-auto mb-8 rounded-full object-cover shadow-2xl border-4 border-cyan-400"
-          /> */}
-         
           <img
             src="https://raw.githubusercontent.com/AJITHRAJ18/ajith_portfolio/main/public/images/profile.JPG"
             alt="Ajithraj M"
@@ -105,15 +98,15 @@ export default function Portfolio() {
           />
           
           <h1 className="text-5xl md:text-7xl font-bold mb-4 mt-8 leading-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Ajithraj
+            Ajithraj M
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">
-            Security Engineer & Full Stack Developer
+            Software Developer & AI Enthusiast
           </h2>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionate security engineer with 2+ years of experience in product security, 
-            automation, and AI/ML integration. Specializing in SAST, vulnerability assessment, 
-            and building secure, scalable solutions.
+            Dedicated engineer with 2+ years of experience in Python software development. 
+            I build intelligent automation tools with AI-powered integrations, specializing in LangChain, Django, 
+            and secure, scalable solutions.
           </p>
           
           {/* Social Links */}
@@ -133,6 +126,14 @@ export default function Portfolio() {
               className="flex items-center justify-center w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors group"
             >
               <Linkedin size={24} className="text-gray-400 group-hover:text-cyan-400 transition-colors" />
+            </a>
+            <a
+              href="https://ajithraj18.github.io/ajith_portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors group"
+            >
+              <ExternalLink size={24} className="text-gray-400 group-hover:text-cyan-400 transition-colors" />
             </a>
           </div>
           
@@ -163,20 +164,22 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold text-center mb-16 text-cyan-400">About Me</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-white">Security Engineer & Problem Solver</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-white">Developer and AI Enthusiast</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                I'm a curious and dedicated security engineer with a passion for automating security processes 
-                and developing innovative solutions. My journey began with Electrical and Electronics Engineering 
-                at Bannari Amman Institute of Technology, but I found my calling in cybersecurity and software development.
+                I'm a dedicated engineer with two years of experience in Python software development and product security. 
+                My journey began with Electrical and Electronics Engineering at Bannari Amman Institute of Technology, 
+                where I graduated with an 8.56 CGPA, but I found my passion in building intelligent automation tools 
+                and AI-powered security solutions.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
-                At Temenos, I've built automated risk analysis solutions, developed security dashboards, 
-                and conducted comprehensive security assessments. I'm particularly excited about integrating 
-                AI/ML with security practices to create more intelligent and proactive security solutions.
+                At Temenos, I've developed cutting-edge AI-powered risk analysis solutions using LangGraph and RAG, 
+                automated security workflows that reduced manual effort by 90%, and built comprehensive security 
+                management portals. My expertise spans AI/ML concepts, data analysis, and designing scalable, 
+                secure systems.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                When I'm not securing applications or building automation tools, I enjoy exploring new 
-                technologies and contributing to open-source projects.
+                I'm passionate about integrating AI with security practices to create intelligent, proactive solutions 
+                that make software development more secure and efficient.
               </p>
             </div>
             <div className="space-y-6">
@@ -185,8 +188,8 @@ export default function Portfolio() {
                 <div>
                   <h5 className="font-semibold text-white">Bachelor of Engineering</h5>
                   <p className="text-gray-400">Electrical and Electronics Engineering</p>
-                  <p className="text-gray-400">Bannari Amman Institute of Technology</p>
-                  <p className="text-gray-400">2019 - 2023</p>
+                  <p className="text-gray-400">Bannari Amman Institute of Technology, Erode</p>
+                  <p className="text-gray-400">2019 - 2023 | CGPA: 8.56</p>
                 </div>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
@@ -219,7 +222,7 @@ export default function Portfolio() {
             <div className="bg-gray-800 rounded-lg p-8 border border-gray-700 shadow-xl">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Associate Product Engineer – Product Security</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">Associate Product Engineer</h3>
                   <p className="text-cyan-400 font-semibold">Temenos | Chennai</p>
                 </div>
                 <div className="text-gray-400 mt-2 sm:mt-0">
@@ -231,39 +234,53 @@ export default function Portfolio() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed">
-                    Built an automated risk analysis solution using LangGraph to detect vulnerable third-party 
-                    library usage by tracing CVE-reported methods/classes directly within the product codebase.
+                    Developed an AI-powered risk analysis solution using <strong className="text-cyan-400">LangGraph</strong>, 
+                    <strong className="text-cyan-400"> RAG</strong>, and <strong className="text-cyan-400">LLM integration</strong> to 
+                    identify CVE-reported methods and classes within source code by decompiling all class files for in-depth inspection.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed">
-                    Developed and implemented an automated end-to-end process using Python to deploy artifacts, 
-                    scan images with JFrog, and push scan results to a centralized security dashboard. This improved 
-                    efficiency by reducing 90% manual effort and ensured timely security assessments for 300+ components.
+                    Automated the end-to-end workflow by scraping, processing, validating, and manipulating scan data using Python. 
+                    Integrated artifact deployment with security scanning tools and pushed results to a dashboard. This reduced 
+                    <strong className="text-cyan-400"> manual effort by 90%</strong> and enabled timely security assessments for 
+                    over <strong className="text-cyan-400">300 components</strong>.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed">
-                    Designed and built a third-party library management portal to provide developers with approved 
-                    and restricted libraries, integrating it with the CI/CD pipeline to automatically fail builds 
-                    that used rejected libraries.
+                    Designed and developed a <strong className="text-cyan-400">Library Management Portal</strong> using Python and 
+                    JavaScript to enforce the use of approved third-party packages, ensuring compliance with secure development practices. 
+                    Built and integrated RESTful APIs to support seamless interaction with the portal.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed">
-                    Conducted monthly SAST audits and web application penetration tests, identifying and reporting 
-                    medium and high-severity vulnerabilities, contributing to improved application security posture.
+                    Conducted <strong className="text-cyan-400">SAST audits</strong> and <strong className="text-cyan-400">web application 
+                    penetration tests</strong>, identifying and reporting medium/high-severity vulnerabilities to enhance application 
+                    security posture.
                   </p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300 leading-relaxed">
-                    Performed static code analysis using Fortify and conducted manual Open-Source Library (OSL) 
-                    scans to ensure compliance and identify potential risks associated with third-party dependencies.
-                  </p>
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-gray-700">
+                <h4 className="text-lg font-semibold text-cyan-400 mb-3">Technologies & Tools Used:</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Python</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Django</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Pandas</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">PostgreSQL</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">LangGraph</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Gen AI</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">REST API</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Docker</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Git</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Celery</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Azure</span>
+                  <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Postman</span>
                 </div>
               </div>
             </div>
@@ -279,14 +296,15 @@ export default function Portfolio() {
             <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-cyan-400 transition-colors">
               <div className="flex items-center mb-4">
                 <Code className="text-cyan-400 mr-3" size={24} />
-                <h3 className="text-xl font-semibold text-white">Development</h3>
+                <h3 className="text-xl font-semibold text-white">Core Development</h3>
               </div>
               <div className="space-y-2">
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Python</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Java</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Django</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">FastAPI</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">REST API</span>
-                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">LangGraph</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">PostgreSQL</span>
               </div>
             </div>
 
@@ -297,11 +315,12 @@ export default function Portfolio() {
               </div>
               <div className="space-y-2">
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">SAST</span>
-                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">DAST</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Pen Testing</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Vulnerability Assessment</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">OWASP Top 10</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Burp Suite</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Fortify</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">JFrog</span>
               </div>
             </div>
 
@@ -311,25 +330,27 @@ export default function Portfolio() {
                 <h3 className="text-xl font-semibold text-white">Cloud & DevOps</h3>
               </div>
               <div className="space-y-2">
-                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Azure</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Microsoft Azure</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Docker</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Jenkins</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Git</span>
-                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">JFrog</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Linux</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Bash Scripting</span>
               </div>
             </div>
 
             <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-cyan-400 transition-colors">
               <div className="flex items-center mb-4">
                 <Database className="text-cyan-400 mr-3" size={24} />
-                <h3 className="text-xl font-semibold text-white">Data & AI</h3>
+                <h3 className="text-xl font-semibold text-white">AI & Data</h3>
               </div>
               <div className="space-y-2">
-                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">PostgreSQL</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">LangGraph</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">LangChain</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">NumPy</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">Pandas</span>
-                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">LangChain</span>
                 <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">AI/ML</span>
+                <span className="inline-block bg-gray-700 text-cyan-400 px-3 py-1 rounded-full text-sm mr-2 mb-2">RAG</span>
               </div>
             </div>
           </div>
@@ -347,16 +368,39 @@ export default function Portfolio() {
                 <h3 className="text-2xl font-bold text-white">Natural Language to Database Query Converter</h3>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Built an intelligent system that converts human language queries (e.g., "show me all employees in sales") 
-                into SQL using LangChain. The system understands natural language context and generates accurate database queries, 
-                making data access more intuitive for non-technical users.
+                Built a sophisticated system that converts human language queries (e.g., "show me all employees in sales") 
+                into SQL using <strong className="text-cyan-400">LangChain</strong>. The system integrates with PostgreSQL 
+                and implements robust input sanitization to enhance security. This project demonstrates my expertise in 
+                AI/ML integration with practical database applications.
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold text-cyan-400 mb-3">Key Features:</h4>
+                <ul className="text-gray-300 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                    Natural language understanding and SQL generation
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                    PostgreSQL database integration
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                    Input sanitization for security enhancement
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                    Context-aware query processing
+                  </li>
+                </ul>
+              </div>
+              <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Python</span>
                 <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">LangChain</span>
-                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">SQL</span>
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">PostgreSQL</span>
                 <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">NLP</span>
                 <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">AI/ML</span>
+                <span className="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Security</span>
               </div>
             </div>
           </div>
@@ -368,7 +412,7 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-cyan-400">Let's Connect</h2>
           <p className="text-xl text-gray-300 mb-12">
-            I'm always interested in discussing security engineering, automation, and innovative technology solutions.
+            I'm always interested in discussing AI-ppwered development,automation, and innovative technology solutions.
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
