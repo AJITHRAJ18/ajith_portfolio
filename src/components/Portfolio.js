@@ -167,9 +167,6 @@ export default function Portfolio() {
               <h3 className="text-2xl font-semibold mb-6 text-white">Developer and AI Enthusiast</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
                 I'm a dedicated engineer with two years of experience in Python software development and product security. 
-                My journey began with Electrical and Electronics Engineering at Bannari Amman Institute of Technology, 
-                where I graduated with an 8.56 CGPA, but I found my passion in building intelligent automation tools 
-                and AI-powered security solutions.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
                 At Temenos, I've developed cutting-edge AI-powered risk analysis solutions using LangGraph and RAG, 
@@ -412,7 +409,7 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-cyan-400">Let's Connect</h2>
           <p className="text-xl text-gray-300 mb-12">
-            I'm always interested in discussing AI-ppwered development,automation, and innovative technology solutions.
+            I'm always interested in discussing AI-powered development,automation, and innovative technology solutions.
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
